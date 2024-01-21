@@ -1,0 +1,60 @@
+body {
+    background-color: #081C15; /* Fondo oscuro */
+    color: #2D6A4F; /* Texto en modo oscuro */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1B4332; /* Fondo más oscuro de la calculadora */
+    box-shadow: 10px 10px 20px #1B4332, -10px -10px 20px #2D6A4F; /* Neomorfismo */
+
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2D6A4F; /* Fondo de la barra de números */
+    color: #fff; /* Texto en la barra de números */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2D6A4F; /* Botones en modo oscuro */
+    box-shadow: 5px 5px 10px #1B4332, -5px -5px 10px #2D6A4F; /* Neomorfismo en botones */
+
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #1B4332; /* Cambia el color al pasar el ratón */
+}
